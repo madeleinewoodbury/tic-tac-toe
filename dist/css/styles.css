@@ -36,6 +36,7 @@ tr th:nth-child(2) {
 }
 
 th {
-  padding: 3rem;
-  font-size: 3rem;
+  width: 150px;
+  height: 150px;
+  font-size: 2.5rem;
 }
