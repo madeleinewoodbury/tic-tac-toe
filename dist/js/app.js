@@ -1,4 +1,5 @@
 // Global Variables
+const replay = document.querySelector('.fa-redo-alt');
 const gameTable = document.querySelector('#game-table');
 const boxes = document.querySelectorAll('.box');
 let player1Boxes = [];
@@ -31,13 +32,6 @@ const combo7 = [boxes[0], boxes[4], boxes[8]];
 const combo8 = [boxes[2], boxes[4], boxes[6]];
 
 let winningCombo = [];
-
-const initGame = () => {
-  for (box of boxes) {
-    box.textContent = '';
-    box.classList.remove('taken');
-  }
-};
 
 gameTable.addEventListener('click', e => {
   if (!gameOver) {
@@ -111,4 +105,6 @@ const checkCombo = (arr, combo) => {
   return false;
 };
 
-initGame();
+replay.addEventListener('click', e => {
+  window.location.reload(true);
+});
