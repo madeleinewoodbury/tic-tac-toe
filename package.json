@@ -4,8 +4,12 @@
   "description": "Simple tic tac toe game",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Madeleine Woodbury",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://madeleinewoodbury.github.io/tic-tac-toe",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
